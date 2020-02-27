@@ -27,10 +27,15 @@ if (!isset($protectedPost['SHOW']))
     $tab_options['form_name']=$form_name;
     $tab_options['table_name']=$table_name;
     echo open_form($form_name);
-    $list_fields=array( 'Name' => 'name',
-                        'Group' => 'group',
-                        'Last logon' => 'lastlogon',
-                        'Description' => 'description',
+    $list_fields=array( 'Name_Users' => 'NAME_USERS',
+                        'Id_Users' => 'ID_USERS',
+                        'Login_Users' => 'LOGIN_USERS',
+                        'Shell_Users' => 'SHELL_USERS',
+                        'Gid_Users' => 'GID_USERS',
+                        'Home_Users' => 'HOME_USERS',
+                        'Id_Group' => 'ID_GROUP',
+                        'Name_Group' => 'NAME_GROUP',
+                        'Member_Group' => 'MEMBER_GROUP',
     );
     $list_col_cant_del=$list_fields;
     $default_fields= $list_fields;
