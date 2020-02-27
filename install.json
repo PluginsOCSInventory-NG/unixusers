@@ -1,0 +1,10 @@
+{
+  "displayName" : "Unixusers",
+  "author" : ["Frank BOURDEAU"],
+  "contributor" : [],
+  "supportedAgent" : ["Unix"],
+  "description" : {
+    "fr" : "Remonte les utilisateurs locaux Unix",
+    "en" : "Retrieve Unix local users"
+  }
+}
