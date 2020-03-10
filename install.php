@@ -1,18 +1,8 @@
 <?php
-function plugin_version_unixusers()
+function extension_init_unixusers()
 {
-    return array('name' => 'unixusers',
-    'version' => '1.0',
-    'author'=> 'Frank BOURDEAU',
-    'license' => 'GPLv2',
-    'verMinOcs' => '2.2');
-}
-
-function plugin_init_unixusers()
-{
-    $object = new plugins;
-    $object -> add_cd_entry("unixusers","other");
-    $object -> sql_query("CREATE TABLE IF NOT EXISTS `unixusers` (
+    $object = new ExtensionCommon;
+    $object -> sqlQuery("CREATE TABLE IF NOT EXISTS `unixusers` (
      `ID` INT(11) NOT NULL AUTO_INCREMENT,
      `HARDWARE_ID` INT(11) NOT NULL,
      `ID_USERS` VARCHAR(255) DEFAULT NULL,
@@ -28,10 +18,14 @@ function plugin_init_unixusers()
      ) ENGINE=InnoDB ;");
 }
 
-function plugin_delete_unixusers()
+function extension_delete_unixusers()
 {
-    $object = new plugins;
-    $object -> del_cd_entry("unixusers");
-    $object -> sql_query("DROP TABLE `unixusers`;");
+    $object = new ExtensionCommon;
+    $object -> sqlQuery("DROP TABLE `unixusers`;");
+}
+
+function extension_upgrade_unixusers()
+{
+
 }
 ?>

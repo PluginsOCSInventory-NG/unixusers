@@ -1,7 +1,7 @@
 {
   "displayName" : "Unixusers",
   "author" : ["Frank BOURDEAU"],
-  "contributor" : [],
+  "contributor" : ["Gilles DUBOIS"],
   "supportedAgent" : ["Unix"],
   "description" : {
     "fr" : "Remonte les utilisateurs locaux Unix",
