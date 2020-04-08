@@ -1,5 +1,5 @@
 <?php
-function extension_init_unixusers()
+function extension_install_unixusers()
 {
     $object = new ExtensionCommon;
     $object -> sqlQuery("CREATE TABLE IF NOT EXISTS `unixusers` (
